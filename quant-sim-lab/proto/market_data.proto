@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+message Order {
+  string order_id = 1;
+  string trader_id = 2;
+  string venue = 3;
+  string symbol = 4;
+  enum Side { BUY=0; SELL=1; }
+  Side side = 5;
+  int64 quantity = 6;
+  int64 px_ticks = 7;
+  enum Type { LIMIT=0; MARKET=1; ICEBERG=2; PEGGED=3; }
+  Type type = 8;
+  int64 display_qty = 9;
+  int64 ts_ns_submit = 10;
+}
+
+message ExecutionReport {
+  string order_id = 1;
+  string venue = 2;
+  int64 filled_qty = 3;
+  int64 remaining_qty = 4;
+  int64 avg_px_ticks = 5;
+  enum Status { ACK=0; PARTIAL=1; FILL=2; CANCELED=3; REJECT=4; }
+  Status status = 6;
+  int64 ts_ns_venue = 7;
+}
+
+message TopOfBook {
+  string venue=1;
+  string symbol=2;
+  int64 bid_px=3;
+  int64 bid_qty=4;
+  int64 ask_px=5;
+  int64 ask_qty=6;
+  int64 ts_ns=7;
+}
