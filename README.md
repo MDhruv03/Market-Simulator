@@ -1,6 +1,6 @@
 # Distributed Market Microstructure Simulator & Alpha Discovery Engine
 
-**Elevator pitch:** Build a low‑latency, distributed "mini‑exchange" that simulates full limit order books (multi‑venue, multi‑asset) with realistic latency networks and thousands of adaptive agents. On top, an **Alpha Discovery Engine** (genetic + deep RL) automatically searches for robust strategies under microstructure constraints. Think **Nasdaq‑in‑a‑box + AutoML for alphas**.
+A low‑latency, distributed "mini‑exchange" that simulates full limit order books (multi‑venue, multi‑asset) with realistic latency networks and thousands of adaptive agents. On top, an **Alpha Discovery Engine** (genetic + deep RL) automatically searches for robust strategies under microstructure constraints. Think **Nasdaq‑in‑a‑box + AutoML for alphas**.
 
 ---
 
